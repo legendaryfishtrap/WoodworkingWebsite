@@ -1,22 +1,22 @@
 export const Images = [
   {
-    img: "free-photo-of-cup-of-coffee-on-bed.jpeg",
+    img: "/cup/1.jpeg",
     title: "cup of coffee on bed",
     project: "cup",
   },
   {
-    img: "pexels-photo-3892129.jpeg",
+    img: "/cup1/1.jpeg",
     title: "thing1",
-    project: "cup",
+    project: "cup1",
   },
   {
-    img: "pexels-photo-18252719.webp",
+    img: "/cup2/1.webp",
     title: "Really Long Title That I Came Up With",
-    project: "cup",
+    project: "cup2",
   },
   {
-    img: "pexels-photo-18659844.webp",
+    img: "/cup3/1.webp",
     title: "thing3",
-    project: "cup",
+    project: "cup3",
   },
 ];

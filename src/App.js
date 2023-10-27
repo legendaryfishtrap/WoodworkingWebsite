@@ -7,11 +7,10 @@ import "./App.css";
 import Root from "./Pages/Root/Root";
 import Error from "./Pages/Error/Error";
 import About from "./Pages/About/About";
-import Gallery from "./Pages/Gallery/Gallery";
-import Sale from "./Pages/Sale/Sale";
-import Plans from "./Pages/Plans/Plans";
+import Shop from "./Pages/Shop/Shop";
 import Contact from "./Pages/Contact/Contact";
-import Project from "./Pages/Project/Project";
+import Project, { loader as projectLoader } from "./Pages/Project/Project";
+import Projects from "./Pages/Project/Projects";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import * as React from "react";
 
@@ -41,28 +40,30 @@ const theme = createTheme({
 const router = createBrowserRouter([
   {
     path: "/",
+
     element: <Root />,
     errorElement: <Error />,
     children: [
+      {
+        path: "/",
+        element: <Projects />,
+      },
       {
         path: "about",
         element: <About />,
       },
       {
-        path: "gallery",
-        element: <Gallery />,
+        path: "projects",
+        element: <Projects />,
       },
       {
         path: "projects/:projectName",
         element: <Project />,
+        loader: projectLoader,
       },
       {
-        path: "sale",
-        element: <Sale />,
-      },
-      {
-        path: "plans",
-        elment: <Plans />,
+        path: "shop",
+        element: <Shop />,
       },
       {
         path: "contact",
