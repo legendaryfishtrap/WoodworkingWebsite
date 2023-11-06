@@ -2,7 +2,7 @@ import { Button, Box, Container, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import Masonry from "@mui/lab/Masonry";
 import { ImageRepo } from "../../Data/ImageRepo";
-import { Images } from "../../Data/Images";
+import { Images } from "../../Data/images";
 import * as _ from "lodash";
 import * as React from "react";
 
@@ -77,8 +77,8 @@ export default function Projects() {
                   </Typography>
                 </Image>
                 <img
-                  src={`${ImageRepo}${item.img}`}
-                  srcSet={`${ImageRepo}${item.img}`}
+                  src={`${ImageRepo}${item.project}/${item.image}`}
+                  srcSet={`${ImageRepo}${item.project}/${item.image}`}
                   alt={item.title}
                   style={{ maxWidth: "100%", maxHeight: "100%" }}
                 ></img>

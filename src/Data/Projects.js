@@ -1,26 +1,26 @@
 export const Projects = {
   cup: {
-    projectName: "Cup",
-    projectDescription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate ex in risus condimentum suscipit. Mauris enim risus, lacinia vulputate orci sed, porttitor pulvinar nisl. Nam ex dui, pretium vel fringilla ac, dictum eget justo. Morbi ultrices faucibus molestie. Phasellus tincidunt elit erat, vitae hendrerit arcu vestibulum quis. Ut eu libero vel nulla dictum rhoncus. Sed id orci viverra, laoreet urna eu, mollis lectus. Ut in blandit turpis. Integer ut vehicula nulla, id blandit urna.",
-    projectImages: ["1.jpeg", "2.jpeg", "3.jpeg"],
+    projectName: "cup",
+    projectDescription: "Wow a cup",
+    projectImages: ["1.jpeg","2.jpeg","3.jpeg"],
+    projectThumbnails: ["thumbnail/1.jpeg","thumbnail/2.jpeg","thumbnail/3.jpeg"],
   },
   cup1: {
-    projectName: "Cup1",
-    projectDescription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate ex in risus condimentum suscipit. Mauris enim risus, lacinia vulputate orci sed, porttitor pulvinar nisl. Nam ex dui, pretium vel fringilla ac, dictum eget justo. Morbi ultrices faucibus molestie. Phasellus tincidunt elit erat, vitae hendrerit arcu vestibulum quis. Ut eu libero vel nulla dictum rhoncus. Sed id orci viverra, laoreet urna eu, mollis lectus. Ut in blandit turpis. Integer ut vehicula nulla, id blandit urna.",
-    projectImages: ["1.jpeg", "2.jpeg"],
+    projectName: "cup1",
+    projectDescription: "Super cool",
+    projectImages: ["1.jpeg","2.jpeg"],
+    projectThumbnails: ["thumbnail/1.jpeg","thumbnail/2.jpeg"],
   },
   cup2: {
-    projectName: "Cup2",
-    projectDescription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate ex in risus condimentum suscipit. Mauris enim risus, lacinia vulputate orci sed, porttitor pulvinar nisl. Nam ex dui, pretium vel fringilla ac, dictum eget justo. Morbi ultrices faucibus molestie. Phasellus tincidunt elit erat, vitae hendrerit arcu vestibulum quis. Ut eu libero vel nulla dictum rhoncus. Sed id orci viverra, laoreet urna eu, mollis lectus. Ut in blandit turpis. Integer ut vehicula nulla, id blandit urna.",
-    projectImages: ["1.webp", "2.webp", "3.webp", "4.webp"],
+    projectName: "cup2",
+    projectDescription: "Wicked",
+    projectImages: ["1.webp","2.webp","3.webp","4.webp"],
+    projectThumbnails: ["thumbnail/1.webp","thumbnail/2.webp","thumbnail/3.webp","thumbnail/4.webp"],
   },
   cup3: {
-    projectName: "Cup3",
-    projectDescription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate ex in risus condimentum suscipit. Mauris enim risus, lacinia vulputate orci sed, porttitor pulvinar nisl. Nam ex dui, pretium vel fringilla ac, dictum eget justo. Morbi ultrices faucibus molestie. Phasellus tincidunt elit erat, vitae hendrerit arcu vestibulum quis. Ut eu libero vel nulla dictum rhoncus. Sed id orci viverra, laoreet urna eu, mollis lectus. Ut in blandit turpis. Integer ut vehicula nulla, id blandit urna.",
+    projectName: "cup3",
+    projectDescription: ";lkjasdf;lkjasfj;",
     projectImages: ["1.webp"],
+    projectThumbnails: ["thumbnail/1.webp"],
   },
 };

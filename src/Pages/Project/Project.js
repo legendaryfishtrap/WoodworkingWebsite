@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Box, Container, Typography, IconButton } from "@mui/material";
 import { useLoaderData } from "react-router-dom";
-import { Projects } from "../../Data/Projects";
+import { Projects } from "../../Data/projects";
 import { ImageRepo } from "../../Data/ImageRepo";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
@@ -11,12 +11,16 @@ export function loader({ params }) {
   return Projects[params.projectName];
 }
 
-function ConvertImagesToImageGalleryFormat(projectName, images) {
+function ConvertImagesToImageGalleryFormat(
+  projectName,
+  images,
+  projectThumbnails
+) {
   let converted = [];
-  images.forEach((image) => {
+  images.forEach((image, index) => {
     converted.push({
       original: `${ImageRepo}${projectName}/${image}`,
-      thumbnail: `${ImageRepo}${projectName}/${image}`,
+      thumbnail: `${ImageRepo}${projectName}/${projectThumbnails[index]}`,
     });
   });
   return converted;
@@ -27,7 +31,8 @@ export default function Project() {
 
   const convertedImages = ConvertImagesToImageGalleryFormat(
     project.projectName.toLowerCase(),
-    project.projectImages
+    project.projectImages,
+    project.projectThumbnails
   );
 
   return (
