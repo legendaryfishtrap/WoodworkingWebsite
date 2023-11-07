@@ -23,4 +23,10 @@ export const Projects = {
     projectImages: ["1.webp"],
     projectThumbnails: ["thumbnails/1.webp"],
   },
+  cup5: {
+    projectName: "cup5",
+    projectDescription: "What the heck",
+    projectImages: ["1.avif"],
+    projectThumbnails: ["thumbnails/1.avif"],
+  },
 };
