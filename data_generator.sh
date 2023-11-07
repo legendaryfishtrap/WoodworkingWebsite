@@ -22,10 +22,10 @@ output_full_path="$script_dir/$output_directory"
 image_repo_full_path="$script_dir/$image_repo_directory"
 
 # JavaScript file to write for 'Projects' in the output directory
-projects_output_file="$output_full_path/projects.js"
+projects_output_file="$output_full_path/Projects.js"
 
 # JavaScript file to write for 'Images' in the output directory
-images_output_file="$output_full_path/images.js"
+images_output_file="$output_full_path/Images.js"
 
 # Initialize the JavaScript file for 'Projects' in the output directory
 echo "export const Projects = {" > "$projects_output_file"
@@ -63,7 +63,7 @@ for project_dir in "$projects_full_path"/*; do
     for thumbnail_file in "$thumbnails_directory"/*; do
       if [ -f "$thumbnail_file" ]; then
         thumbnail_name=$(basename "$thumbnail_file")
-        thumbnails+=("\"thumbnail/$thumbnail_name\"")  # Enclose thumbnail names in double quotes
+        thumbnails+=("\"thumbnails/$thumbnail_name\"")  # Enclose thumbnail names in double quotes
         # Copy the thumbnail to the ImageRepo directory
         mkdir -p "$image_repo_full_path/$project_name/thumbnails"
         cp "$thumbnail_file" "$image_repo_full_path/$project_name/thumbnails/$thumbnail_name"
@@ -103,8 +103,5 @@ echo "]" >> "$images_output_file"
 
 echo "JavaScript file '$projects_output_file' for 'Projects' has been generated."
 echo "JavaScript file '$images_output_file' for 'Images' has been generated."
-
-# Format the generated JavaScript files using Prettier
-prettier --write "$projects_output_file" "$images_output_file"
 
 echo "JavaScript files have been generated and formatted using Prettier."
