@@ -22,10 +22,4 @@ export const Images = [
     title: "Cup3",
     project: "cup3",
   }
-,
-  {
-    image: "1.avif",
-    title: "Cup5",
-    project: "cup5",
-  }
 ]
